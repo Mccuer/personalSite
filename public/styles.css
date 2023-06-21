@@ -1,0 +1,37 @@
+/* Styling the header */
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  /* Styling the navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul.nav-link {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.nav-link li {
+    margin-right: 10px;
+  }
+  
+  ul.nav-link li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  ul.nav-link li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  
