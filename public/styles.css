@@ -1,11 +1,17 @@
-/* Styling the header */
+
+body{
+  background-color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+ /*Header Styling */
 header {
     background-color: #333;
     padding: 20px;
     color: #fff;
+    font-family: 'Raleway', sans-serif;
   }
   
-  /* Styling the navigation */
+  /*nav*/
   nav {
     display: flex;
     justify-content: space-between;
@@ -33,5 +39,88 @@ header {
     background-color: #555;
     border-radius: 5px;
   }
+
+  /*project and work styling*/
+  .project-header{
+    text-align: center;
+  }
+
+  .project-container .project-card{
+
+    width: 210px;
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding:16px;
+    box-shadow: 0 9px 17px -6px rgba(0,0,0,.2);
+    position:relative;
+    transition: all 400ms ease;
+  }
+  .project-container ,.project-card:hover{
+    transform: scale(1.03)
+  }
+.project-container, .project-container *{
+  box-sizing: border-box;
+}
+
+  .project-container .project-card a{
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
+  }
+  .project-container .project-card img{
+    margin: -16px;
+    object-fit: cover;
+  }
+  .project-container .project-card .category{
+    position:absolute;
+    top:8px;
+    right: 8px;
+    background: #333;
+    color:#fff;
+    padding:2px 16px;
+    font-size:13px;
+    text-transform: uppercase;
+    border-radius:10px;
+  }
+  .project-container .project-card h2.title{
+    font-size: 20px;
+    margin:28px 0 10px 0;
+    line-height: 1.4;
+  }
+  .project-container .project-card .description{
+    font-size: 15px;
+    color:#333;
+    margin:0;
+    line-height: 1.7;
+  }
+  .project-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 32px;
+      max-width: 800px;
+      margin: 20px auto;
+  }
   
-  
+@media (max-width: 850px) {
+  .project-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-container .project-card {
+    width: 100%;
+  }
+
+  .project-container .project-card img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .project-container {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+}
