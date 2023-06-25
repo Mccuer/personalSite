@@ -1,13 +1,21 @@
 
 body{
-  background-color: #fff;
+  background-color: #d9dcd6;
+  color:#16425b;
   font-family: 'Raleway', sans-serif;
+}
+/*projects info styling*/
+.question{
+  color:#3a7ca5;
+}
+.project-header{
+  color:#3a7ca5;
 }
  /*Header Styling */
 header {
-    background-color: #333;
+    background-color: #3a7ca5;
     padding: 20px;
-    color: #fff;
+    color: #d9dcd6;
     font-family: 'Raleway', sans-serif;
   }
   
@@ -31,15 +39,30 @@ header {
   
   ul.nav-link li a {
     text-decoration: none;
-    color: #fff;
+    color: #d9dcd6;
     padding: 10px;
   }
   
   ul.nav-link li a:hover {
-    background-color: #555;
+    background-color: #81c3d7;
     border-radius: 5px;
   }
-
+  /*Intro Page Styling*/
+  .name-container{
+    width:100%;
+    height: auto;
+    background-color: #16425b;
+    color:#d9dcd6;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .name-container h1{
+    /*font fix here*/
+  }
+  .name-container h2{
+    /*font fix here*/
+  }
   /*project and work styling*/
   .project-header{
     text-align: center;
@@ -48,7 +71,7 @@ header {
   .project-container .project-card{
 
     width: 210px;
-    background: #fff;
+    background: #d9dcd6;
     font-family: 'Raleway', sans-serif;
     padding:16px;
     box-shadow: 0 9px 17px -6px rgba(0,0,0,.2);
@@ -64,7 +87,7 @@ header {
 
   .project-container .project-card a{
     text-decoration: none;
-    color: #333;
+    color: #3a7ca5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,8 +101,8 @@ header {
     position:absolute;
     top:8px;
     right: 8px;
-    background: #333;
-    color:#fff;
+    background: #16425b;
+    color:#d9dcd6;
     padding:2px 16px;
     font-size:13px;
     text-transform: uppercase;
@@ -92,7 +115,7 @@ header {
   }
   .project-container .project-card .description{
     font-size: 15px;
-    color:#333;
+    color:#16425b;
     margin:0;
     line-height: 1.7;
   }
